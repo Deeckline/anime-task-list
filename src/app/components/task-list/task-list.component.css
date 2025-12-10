@@ -1,0 +1,244 @@
+/* ===== CONTENEDOR GENERAL (solo lista) ===== */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 22px 0 0;
+}
+
+/* ===== BUSCADOR ===== */
+
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 18px auto 22px;
+  max-width: 460px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #2a2d36;
+  background: #1d1f27;
+  color: #f1f1f6;
+  font-size: 15px;
+}
+
+.search input::placeholder {
+  color: #9a9cb0;
+}
+
+.search button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  background: #2a2d36;
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.search button:hover {
+  background: #323542;
+}
+
+/* ===== STATS ===== */
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.stats span {
+  background: #1d1f27;
+  border: 1px solid #2a2d36;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+/* ===== FILTROS ===== */
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.filters button {
+  background: #1d1f27;
+  border: 1px solid #2a2d36;
+  padding: 7px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.filters button:hover {
+  background: #262836;
+}
+
+.filters button.active {
+  background: #4b7bec;
+  border-color: #4b7bec;
+  color: #ffffff;
+}
+
+/* ===== PROGRESO ===== */
+
+.progress-info {
+  text-align: center;
+  margin: 8px 0 10px;
+}
+
+.progress-info p {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #bfc1ce;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 12px;
+  margin: 0 auto 4px;
+  background: #1a1c23;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  border-radius: 10px;
+  transition: width 0.25s ease;
+}
+
+/* ===== FILAS DE TAREAS ===== */
+
+.task-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #1b1d25;
+  border: 1px solid #2a2d36;
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  transition: 0.2s ease;
+}
+
+.task-row:hover {
+  background: #21232e;
+  transform: translateY(-1px);
+}
+
+/* COLUMNAS */
+
+.col-check {
+  width: 32px;
+  text-align: center;
+}
+
+.col-text {
+  flex: 1;
+  font-size: 16px;
+}
+
+.col-cat {
+  width: 110px;
+  text-align: center;
+}
+
+.col-del {
+  width: 40px;
+  text-align: center;
+}
+
+/* CHECKBOX */
+
+.col-check input {
+  width: 18px;
+  height: 18px;
+  accent-color: #4b7bec;
+}
+
+/* TEXTO TAREA */
+
+.col-text span {
+  color: #f1f1f6;
+  font-size: 16px;
+}
+
+.col-text span.done {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+/* CATEGORÍA (TAG) */
+
+.category {
+  padding: 6px 14px;
+  border-radius: 14px;
+  box-shadow: 0 0 6px rgba(255,255,255,0.15);
+  font-size: 13px;   
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+.shonen {
+  background: #ff6e6e;
+}
+
+.seinen {
+  background: #7f72ff;
+}
+
+.isekai {
+  background: #ffb86b;
+}
+
+.romance {
+  background: #ff6faa;
+}
+
+.slice-of-life {
+  background: #6fd96f;
+}
+
+.comedy {
+  background: #ffd93d;
+}
+
+/* BOTÓN ELIMINAR */
+
+.col-del button {
+  width: 32px;
+  height: 28px;
+  border-radius: 8px;
+  border: none;
+  background: #ff4f7d;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.col-del button:hover {
+  background: #ff2f63;
+  transform: scale(1.07);
+}

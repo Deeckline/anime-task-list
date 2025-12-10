@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/* Fuente global */
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Fondo global */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0b0b0d;
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+
+/* Centra el formulario de nueva tarea */
+app-add-task {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* Centra las pestañas de filtro  */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}

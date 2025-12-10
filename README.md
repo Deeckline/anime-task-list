@@ -1,59 +1,113 @@
-# TodoApp
+## Anime Task List
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.8.
+Anime Task List es una aplicación web hecha con Angular para gestionar tareas, pero con un toque temático de anime.
 
-## Development server
+Nació como un proyecto personal para practicar Angular moderno, organizar mejor mi código y ganar confianza como desarrollador frontend.
 
-To start a local development server, run:
+## Qué hace la aplicación
 
-```bash
-ng serve
-```
+- Permite añadir tareas indicando el título y su categoría (Shonen, Seinen, Isekai, Romance, etc.).
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Se pueden marcar como completadas o pendientes con un simple clic.
 
-## Code scaffolding
+- Incluye filtros por estado (todas, pendientes, completadas).
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Tiene un buscador para filtrar por texto o categoría.
 
-```bash
-ng generate component component-name
-```
+- Muestra una barra de progreso con el porcentaje de tareas completadas.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Todo se guarda en el almacenamiento local del navegador, así que los datos no se pierden al recargar la página.
 
-```bash
-ng generate --help
-```
+- La interfaz está diseñada en modo oscuro, con un estilo limpio y centrado en la legibilidad.
 
-## Building
+## Tecnologías utilizadas
 
-To build the project run:
+- Angular con componentes standalone.
 
-```bash
-ng build
-```
+- Signals para manejar el estado de las tareas de forma reactiva.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Reactive Forms para el formulario de creación de tareas.
 
-## Running unit tests
+- TypeScript para tener el código más claro y tipado.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- HTML y CSS para la estructura y el diseño.
 
-```bash
-ng test
-```
+- LocalStorage para guardar las tareas en el navegador sin necesitar backend.
 
-## Running end-to-end tests
+## Cómo ejecutar el proyecto
 
-For end-to-end (e2e) testing, run:
+Clona el repositorio:
 
-```bash
-ng e2e
-```
+git clone https://github.com/tu-usuario/anime-task-list
+cd anime-task-list
+npm install
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Lanza la aplicación:
 
-## Additional Resources
+ng serve -o
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+La app estará disponible en:
+
+http://localhost:4200
+
+Estructura del proyecto
+src/
+┣ app/
+┃ ┣ components/
+┃ ┃ ┣ add-task/
+┃ ┃ ┃ ┣ add-task.component.ts
+┃ ┃ ┃ ┣ add-task.component.html
+┃ ┃ ┃ ┗ add-task.component.css
+┃ ┃ ┗ task-list/
+┃ ┃ ┣ task-list.component.ts
+┃ ┃ ┣ task-list.component.html
+┃ ┃ ┗ task-list.component.css
+┃ ┣ services/
+┃ ┃ ┗ todo.service.ts
+┃ ┣ app.component.ts
+┃ ┣ app.component.html
+┃ ┗ app.component.css
+┣ assets/
+┣ index.html
+┗ main.ts
+
+## Captura de pantalla
+
+![Anime Task List Preview](./AnimeTaskList-preview.png)
+
+## Lo que aprendí haciéndola
+
+- Usar Signals para mantener el estado sincronizado sin depender de RxJS.
+
+- Estructurar componentes standalone de forma clara y sencilla.
+
+- Validar formularios de manera reactiva.
+
+- Usar LocalStorage para persistir datos entre recargas.
+
+- Diseñar una interfaz en modo oscuro legible y agradable.
+
+- Iterar el diseño: empezar simple y mejorarlo progresivamente.
+
+- Depurar errores, entenderlos y corregirlos limpiamente.
+
+## Próximos pasos
+
+- Guardar la configuración de filtros y vista entre sesiones.
+
+- Permitir ordenar las tareas (por estado, categoría o alfabéticamente).
+
+- Integrar una API pública de anime para sugerir títulos reales.
+
+- Añadir tests básicos para el servicio y los componentes.
+
+## Sobre mí
+
+Soy Rubén Alegre, programador junior especializado en Angular.
+Mi objetivo es seguir creciendo como desarrollador frontend y aportar en proyectos reales.
+
+📧 rubenalegrebonaque@gmail.com
+
+🌐 LinkedIn (pendiente)
+
+“La mejor forma de aprender a programar es construir cosas, romperlas y volver a hacerlas mejor.”

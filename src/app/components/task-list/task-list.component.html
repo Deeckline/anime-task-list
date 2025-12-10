@@ -1,0 +1,68 @@
+<div class="search">
+  <input
+    type="text"
+    [value]="searchTerm()"
+    (input)="onSearch($event)"
+    placeholder="Buscar por título o categoría..."
+  />
+
+  @if (searchTerm()) {
+  <button (click)="clearSearch()" aria-label="Limpiar">✕</button>
+  }
+</div>
+
+<div class="stats">
+  <span>Total: {{ totalCount() }} 📝</span>
+  <span>Pendientes: {{ pendingCount() }} 📌</span>
+  <span>Completadas: {{ doneCount() }} ✅</span>
+</div>
+
+<div class="filters">
+  <button (click)="filter.set('all')" [class.active]="filter() === 'all'">Todas</button>
+  <button (click)="filter.set('pending')" [class.active]="filter() === 'pending'">
+    Pendientes
+  </button>
+  <button (click)="filter.set('done')" [class.active]="filter() === 'done'">Completadas</button>
+</div>
+
+@if (totalCount() > 0) {
+<div class="progress-info">
+  <p>
+    Completadas:
+    <strong>{{ doneCount() }}</strong>
+    /
+    {{ totalCount() }}
+    ({{ progressPercent() }}%)
+  </p>
+
+  <div class="progress-bar">
+    <div class="progress-fill" [style.width.%]="progressPercent()"></div>
+  </div>
+</div>
+}
+
+<ul>
+  @for (task of filteredTodos(); track task.id) {
+  <li class="task-row">
+    <div class="col-check">
+      <input type="checkbox" [checked]="task.done" (change)="toggleDone(task.id)" />
+    </div>
+
+    <div class="col-text">
+      <span [class.done]="task.done">
+        {{ task.text }}
+      </span>
+    </div>
+
+    <div class="col-cat">
+      <span class="category" [ngClass]="getCategoryClass(task.category)">
+        {{ task.category }}
+      </span>
+    </div>
+
+    <div class="col-del">
+      <button (click)="delete(task.id)">×</button>
+    </div>
+  </li>
+  }
+</ul>

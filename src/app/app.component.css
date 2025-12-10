@@ -1,0 +1,45 @@
+/* ===== GLOBAL ===== */
+:host {
+  display: block;
+  background: #0b0b0d;
+  min-height: 100vh;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  color: #e5e7eb;
+}
+
+/* ===== ESPACIADO SUPERIOR ===== */
+body, html {
+  padding-top: 40px;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.container {
+  max-width: 900px;
+   margin: 4rem auto 3rem;
+  padding: 2.5rem;
+  background: #141418;
+  border-radius: 16px;
+  box-shadow: 0 0 24px rgba(0,0,0,0.45);
+}
+
+/* ===== TITULO ===== */
+h1 {
+  margin-top: 2.5rem;   
+  margin-bottom: 2rem;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  color: #f0f0f5;
+}
+.header-border {
+  width: 100%;
+  height: 3px;
+  background: #3b82f6; 
+  margin: 0 auto 2rem;
+  border-radius: 2px;
+  opacity: 0.9;
+}

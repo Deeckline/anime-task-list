@@ -1,0 +1,9 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input type="text" placeholder="Nuevo anime..." formControlName="text" />
+
+  <select formControlName="category">
+    <option *ngFor="let cat of animeCategories" [value]="cat">{{ cat }}</option>
+  </select>
+
+  <button type="submit" [disabled]="form.invalid">Añadir ✨</button>
+</form>
