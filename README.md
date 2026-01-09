@@ -1,4 +1,8 @@
-## Anime Task List
+## Demo
+
+https://animetasklist.web.app
+
+# Anime Task List
 
 Anime Task List es una aplicación web hecha con Angular para gestionar tareas, pero con un toque temático de anime.
 
@@ -38,7 +42,7 @@ Nació como un proyecto personal para practicar Angular moderno, organizar mejor
 
 Clona el repositorio:
 
-git clone https://github.com/tu-usuario/anime-task-list
+git clone https://github.com/Deeckline/anime-task-list
 cd anime-task-list
 npm install
 
@@ -103,11 +107,17 @@ src/
 
 ## Sobre mí
 
-Soy Rubén Alegre, programador junior especializado en Angular.
-Mi objetivo es seguir creciendo como desarrollador frontend y aportar en proyectos reales.
+Soy Rubén Alegre, desarrollador junior especializado en Angular.
+Sigo formándome cada día con proyectos prácticos y mi objetivo es entrar en un equipo donde pueda crecer como frontend.
 
-📧 rubenalegrebonaque@gmail.com
+📧 ruben.alegre.dev@gmail.com
 
-🌐 LinkedIn (pendiente)
+🔗 LinkedIn - https://www.linkedin.com/in/ruben-alegre/
 
-“La mejor forma de aprender a programar es construir cosas, romperlas y volver a hacerlas mejor.”
+## Portfolio
+
+Puedes ver más proyectos y conocer mejor mi perfil en:
+
+🔗 https://ruben-alegre-portfolio.web.app/
+
+> “La mejor forma de aprender a programar es construir cosas, romperlas y volver a hacerlas mejor.”
